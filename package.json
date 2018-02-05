@@ -1,0 +1,36 @@
+{
+  "name": "nowitsdelicious",
+  "version": "1.0.0",
+  "description": "Learn Node",
+  "main": "start.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.3",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hafidziapermana/nowitsdelicious.git"
+  },
+  "keywords": [
+    "Node"
+  ],
+  "author": "Hafidz Permana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hafidziapermana/nowitsdelicious/issues"
+  },
+  "homepage": "https://github.com/hafidziapermana/nowitsdelicious#readme"
+}
