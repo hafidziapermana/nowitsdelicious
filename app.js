@@ -1,4 +1,6 @@
+const compression = require('compression')
 const express = require('express')
+const helmet = require('helmet')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 const cors = require('cors')
@@ -8,6 +10,8 @@ const path = require('path')
 const routes = require('./routes/index')
 
 const app = express() // Create app
+app.use(compression()) // Gzip compressing can greatly decrease the size of the response body and hence increase the speed of a web app
+app.use(helmet()) // Helmet helps you secure your Express apps by setting various HTTP headers
 
 app.set('views', path.join(__dirname, 'views'))         // Set folder view engine
 app.set('view engine', 'pug')                           // Set view engine to pug
