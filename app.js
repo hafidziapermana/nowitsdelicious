@@ -9,7 +9,7 @@ const routes = require('./routes/index')
 
 const app = express() // Create app
 
-app.set('views', path.join(__dirname, 'views'))         //Set folder view engine
+app.set('views', path.join(__dirname, 'views'))         // Set folder view engine
 app.set('view engine', 'pug')                           // Set view engine to pug
 app.use(express.static(path.join(__dirname, 'public'))) // serves up static files from the public folder
 app.use(bodyParser.urlencoded({ extended: true }))      // parse application/x-www-form-urlencoded
