@@ -1,0 +1,15 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background: purple;
+  background:#efefef;
+  &:before {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 100%;
+  }
+}
+
